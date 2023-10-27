@@ -1,2 +1,2 @@
 # Game1
-Marks game 
+Mark game 
