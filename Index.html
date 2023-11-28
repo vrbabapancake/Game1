@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -56,11 +56,27 @@
       width: 100%;
     }
   </style>
-  <!-- ... (previous HTML code) ... -->
-  <!-- ... (previous meta tags and title) ... -->
+</head>
+<body>
+  <header>
+    <h1>Funky Movie Trivia</h1>
+  </header>
+  <main>
+    <div class="question">What year was the movie "Pulp Fiction" released?</div>
+    <div class="options">
+      <button class="option" onclick="checkAnswer('1992')">1992</button>
+      <button class="option" onclick="checkAnswer('1994')">1994</button>
+      <button class="option" onclick="checkAnswer('1996')">1996</button>
+      <button class="option" onclick="checkAnswer('1998')">1998</button>
+    </div>
+  </main>
+  <footer>
+    &copy; 2023 Funky Movie Trivia
+  </footer>
+
   <script>
     function checkAnswer(selectedOption) {
-      const correctAnswer = "1994"; // Set the correct answer here
+      const correctAnswer = "1994";
 
       if (selectedOption === correctAnswer) {
         alert("Correct!");
@@ -69,25 +85,5 @@
       }
     }
   </script>
-  <!-- ... (previous style tag) ... -->
-</head>
-<!-- ... (remaining HTML code) ... -->
-</head>
-<body>
-  <header>
-    <h1>Funky Movie Trivia</h1>
-  </header>
-  <main>
-    <div class="question">What year was the movie "Pulp Fiction" released?</div>
-  <div class="options">
-  <button class="option" onclick="checkAnswer('1992')">1992</button>
-  <button class="option" onclick="checkAnswer('1994')">1994</button>
-  <button class="option" onclick="checkAnswer('1996')">1996</button>
-  <button class="option" onclick="checkAnswer('1998')">1998</button>
-</div>
-  </main>
-  <footer>
-    &copy; 2023 Funky Movie Trivia
-  </footer>
 </body>
 </html>
