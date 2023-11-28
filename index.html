@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funky Movie Trivia</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #282c35;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4CAF50;
+      padding: 1em;
+    }
+
+    h1 {
+      color: #fff;
+    }
+
+    main {
+      padding: 2em;
+    }
+
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    .options {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 1em;
+    }
+
+    .option {
+      background-color: #61dafb;
+      color: #282c35;
+      padding: 0.5em 1em;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    footer {
+      background-color: #333;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Funky Movie Trivia</h1>
+  </header>
+  <main>
+    <div class="question">What year was the movie "Pulp Fiction" released?</div>
+    <div class="options">
+      <button class="option" onclick="checkAnswer('1992')">1992</button>
+      <button class="option" onclick="checkAnswer('1994')">1994</button>
+      <button class="option" onclick="checkAnswer('1996')">1996</button>
+      <button class="option" onclick="checkAnswer('1998')">1998</button>
+    </div>
+  </main>
+  <footer>
+    &copy; 2023 Funky Movie Trivia
+  </footer>
+
+  <script>
+    function checkAnswer(selectedOption) {
+      const correctAnswer = "1994";
+
+      if (selectedOption === correctAnswer) {
+        alert("Correct!");
+      } else {
+        alert("Wrong!");
+      }
+    }
+  </script>
+</body>
+</html>
